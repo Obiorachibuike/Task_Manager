@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+}
+.app_tracker-cont {
+  background: rgb(242, 241, 241);
+  padding: 20px;
+  border-radius: 15px;
+  width: 258px;
+  height: 200px;
+  display: flex;
+  box-shadow: 0px 5px 2px 2px #acacac;
+  margin-bottom: 30px;
+}
+.main_app_container {
+  margin: 90%;
+  margin: auto;
+}
+
+.app_tracker-image-cont {
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  border-radius: 62%;
+  height: 60px;
+}
+.add_task_btn_cont {
+  width: 258px;
+  padding: 20px;
+  background: #01015e;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.app_tracker-content {
+  width: 100%;
+}
+.app_tracker-title-cont {
+  margin: 25px 0px;
+  color: gray;
+}
+.add_task_btn_cont button {
+  background: #01015e;
+  color: white;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  /* padding: 20px; */
+}
+/* .task_info_cont{
+  position: fixed;
+  top: 70px;
+} */
+.task_info_cont {
+  width: 300px;
+}
+.app_tracker-number {
+  font-weight: 1000;
+  font-size: 35px;
+}
+
+.todo_cont {
+  background: rgb(242, 241, 241);
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  min-height: 805px;
+  box-shadow: 0px 5px 2px 2px #acacac;
+  margin: 0px 10px;
+}
+.app_info {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+/* .todos_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 77%;
+  margin-left: 29px;
+
+} */
+.completed{
+
+}
+.todo_color {
+  border-radius: 50%;
+  height: 30px;
+  width: 8px;
+  border-radius: 50%;
+  height: 8px;
+  margin-top: 4px;
+}
+.blue {
+  background-color: #1a1ab9;
+  color: #1a1ab9;
+}
+.orange {
+  background-color: orange;
+  color: orange;
+}
+.green {
+  background-color: green;
+  color: green;
+}
+.todo_title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 30px;
+  width: 120px;
+  margin: auto;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo_title.progress{
+   width: 200px;
+}
+.todo_title-content {
+  border-bottom: 3px solid #1a1ab9;
+}
+.todo_title-content.progress{
+  border-bottom: 3px solid orange;
+}
+.todo_title-content.done{
+  border-bottom: 3px solid green;
+
+}
+.todo_length {
+  background: gainsboro;
+  width: 27px;
+  border-radius: 50%;
+  color: gray;
+  font-size: 19px;
+  padding: 2px;
+}
+.todo_list_cont {
+  padding: 20px 0px;
+}
+.todo_list_content {
+  background-color: white;
+  width: 260px;
+  height: 200px;
+  box-shadow: 0px 5px 2px 2px #acacac;
+  border-radius: 15px;
+  padding: 20px;
+}
+.todo_head_content {
+  display: flex;
+  justify-content: space-between;
+}
+.todo_name {
+  padding: 0px;
+  font-size: 26px;
+  font-weight: 800;
+}
+.todo_more {
+  font-size: 30px;
+}
+.todo_body_content p {
+  color: gray;
+  word-break: break-word;
+  font-size: 15px;
+  margin: 5px 0px;
+  min-height: 80px;
+}
+.todo_deadline {
+  color: rgb(85, 83, 83);
+  font-weight: 550;
+  display: flex;
+  height: 37px;
+  align-items: center;
+}
+.todo_deadline span {
+  font-weight: 1000;
+}
+.todo_state {
+  width: 30px;
+  padding: 10px;
+  background: #fff4df;
+  color: orange;
+  font-size: 17px;
+  border-radius: 7px;
+}
+.todos_cont {
+  margin-bottom: 40px;
+}
+
+
+.form_button_cont{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.deadline,.todo_more{
+  cursor: default;
+}
+
+@media (max-width: 1460px) {
+  .todo_cont {
+    margin: 0px 20px;
+    margin-bottom: 30px;
+  }
+  .completed{
+     width: 95%;
+     
+  }
+  /* .app_tracker-cont{
+    width: 270px;
+  } */
+}
+@media (max-width: 1124px) {
+  .todo_cont {
+    margin: 0px 20px;
+  }
+  /* .app_tracker-cont{
+    width: 270px;
+  } */
+}
+
+@media (max-width: 900px) {
+  .app_info {
+    flex-direction: column;
+  }
+  .task_info_content {
+    /* display: flex; */
+  }
+  .app_tracker-cont,
+  .add_task_btn_cont {
+    width: 100%;
+  }
+  .task_info_cont {
+    width: 96%;
+  }
+  .todo_cont {
+    width: 96%;
+  }
+  .todo_list_content {
+    width: 95%;
+  }
+  .main_app_container {
+    padding: 10px;
+  }
+  .todo_title {
+    margin: 0;
+  }
+}

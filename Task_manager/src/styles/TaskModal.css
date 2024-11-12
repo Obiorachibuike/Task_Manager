@@ -1,0 +1,23 @@
+.modal-content {
+  background: white;
+  width: 300px;
+  min-height: 200px;
+  border: 2px solid black;
+  padding: 20px;
+  box-shadow: 0px 5px 2px 2px #acacac;
+}
+.modal {
+  position: fixed;
+  top: 201px;
+  left: 623px;
+}
+form input,textarea {
+  width: 93%;
+  padding-left: -4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+}

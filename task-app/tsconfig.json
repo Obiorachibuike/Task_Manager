@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                     // ES6 as target to keep modern JavaScript features
+    "module": "CommonJS",                 // Use CommonJS modules (default for Node.js)
+    "moduleResolution": "Node",           // Use Node's module resolution strategy
+    "outDir": "./dist",                   // Output compiled files to the dist directory
+    "lib": ["esnext", "dom"],             // Include modern JavaScript and DOM libraries
+    "rootDir": "./src",                   // Ensure TypeScript files are in src
+    "esModuleInterop": true,              // Allow importing CommonJS modules in ES module style
+    "skipLibCheck": true,
+    "strict": true,
+    "declaration": true,
+    "allowJs": true,                      // Allow JavaScript files in the project
+    "resolveJsonModule": true             // Allows importing JSON files
+  },
+  "include": ["src/**/*.ts"],             // Include all TypeScript files in src
+  "exclude": ["node_modules", "dist"]     // Exclude node_modules and dist from TypeScript compilation
+}
